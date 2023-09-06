@@ -13,7 +13,7 @@ object olivia {
 object bruno {
 	var esFeliz = true
 	var tieneSed = false
-	var peso = peso
+	var peso =  55000
 	
 	method esFeliz() = esFeliz
 	
@@ -24,7 +24,8 @@ object bruno {
 	method recibirMasajes() {esFeliz = true}
 	
 	method baniarseConVapor() {
-		peso -= 500 
+		
+		peso = 0.max(peso-500)
 		tieneSed = true
 	}
 	

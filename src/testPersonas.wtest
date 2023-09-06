@@ -1,0 +1,35 @@
+import personas.*
+
+	
+	
+test "Olivia nace con concentracion 6" {
+	assert.equals(6,olivia.gradoDeConcentracion())
+}
+
+test "Olivia recibe 2 veces masajes y su grado de concentracion aumenta 6 puntos"{
+	
+	olivia.recibirMasajes()
+	olivia.recibirMasajes()
+	
+	assert.equals(12, olivia.gradoDeConcentracion())
+}
+test "Olivia discute 3 veces y su grado de concentracion disminuye 3 puntos"{
+	
+	olivia.discutir()
+	olivia.discutir()
+	olivia.discutir()
+	
+	assert.equals(3, olivia.gradoDeConcentracion())
+}
+
+test "Bruno nace sin tener sed"{
+	assert.notThat(bruno.tieneSed())
+}
+
+test "Bruno se da dos baños de vapor y queda con 54000 de peso "{
+	
+	bruno.baniarseConVapor()
+	bruno.baniarseConVapor()
+	
+	assert.equals(54000 ,bruno.peso())
+}
